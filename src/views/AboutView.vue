@@ -1,20 +1,12 @@
 <template>
   <div class="about">
     <div>
-      <h1>{{ currentUser.name }}</h1>
-      <h1>{{ currentUser.email }}</h1>
+      <h3>This is a user with a name and an email address.</h3>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  computed: {
-    currentUser() {
-      return this.$store.state.currentUser
-    }
-  }
-}
 </script>
 
 <style scoped>

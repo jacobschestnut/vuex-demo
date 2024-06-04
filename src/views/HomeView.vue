@@ -2,8 +2,8 @@
   <div class="home">
     <label for="currentUser">Current User: </label>
     <div class="labels">
-      <span class="label-value">{{ $store.state.currentUser.name }}</span>
-      <span class="label-value">{{ $store.state.currentUser.email }}</span>
+      <h3 class="label-value">{{ $store.state.currentUser.name }}</h3>
+      <h3 class="label-value">{{ $store.state.currentUser.email }}</h3>
     </div>
 
     <div id="form">
@@ -43,7 +43,13 @@ export default {
 
 <style>
 label {
+  font-size: larger;
   font-weight: bold;
+  padding: 8px;
+}
+
+input {
+  padding: 8px;
 }
 
 .labels {
@@ -58,6 +64,13 @@ label {
 
 #form-fields {
   display: flex;
+  margin: 30px 0;
+}
+
+button {
+  border: none;
+  padding: 6px;
+  font-size: medium;
 }
 
 @media (min-width: 1024px) {
