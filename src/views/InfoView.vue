@@ -18,11 +18,9 @@ export default {
 </script>
 
 <style scoped>
-@media (min-width: 1024px) {
-    .about {
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-    }
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
 }
 </style>

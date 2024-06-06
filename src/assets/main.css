@@ -7,6 +7,16 @@
   font-weight: normal;
 }
 
+button {
+  font-weight: bold;
+  background-color: hsla(160, 100%, 37%, 1);
+  border-radius: 1px;
+  border: none;
+  padding: 6px;
+  font-size: medium;
+  margin: 0;
+}
+
 a,
 .green {
   text-decoration: none;
@@ -16,7 +26,9 @@ a,
 }
 
 @media (hover: hover) {
-  a:hover {
+  a:hover,
+  button:hover {
+    cursor: pointer;
     background-color: hsla(160, 100%, 37%, 0.2);
   }
 }

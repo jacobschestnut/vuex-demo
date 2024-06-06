@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <label for="currentUser">Current User: </label>
+    <label class="green" for="currentUser">Current User: </label>
     <div class="labels">
       <h3 class="label-value">{{ $store.state.currentUser.name }}</h3>
       <h3 class="label-value">{{ $store.state.currentUser.email }}</h3>
@@ -9,11 +9,11 @@
     <div id="form">
       <div id="form-fields">
         <div class="field">
-          <label for="name">Name: </label>
+          <label class="green" for="name">Name: </label>
           <input placeholder="Enter user name" v-model="updatedUser.name">
         </div>
         <div class="field">
-          <label for="email">Email: </label>
+          <label class="green" for="email">Email: </label>
           <input placeholder="Enter user email" v-model="updatedUser.email">
         </div>
       </div>
@@ -42,6 +42,12 @@ export default {
 </script>
 
 <style>
+.home {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
 label {
   font-size: larger;
   font-weight: bold;
@@ -59,25 +65,11 @@ input {
 }
 
 .field {
-  margin: 0 20px 20px 0;
+  margin: 0 20px 0 0;
 }
 
 #form-fields {
   display: flex;
-  margin: 30px 0;
-}
-
-button {
-  border: none;
-  padding: 6px;
-  font-size: medium;
-}
-
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+  margin: 10px 0 40px 0;
 }
 </style>
