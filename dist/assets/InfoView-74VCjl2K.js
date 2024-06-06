@@ -1,0 +1,1 @@
+import{_ as s,c,b as e,t,o as n}from"./index-81Rbq4BE.js";const a={computed:{currentUser(){return this.$store.state.currentUser}}},o={class:"info"};function l(u,_,d,i,f,r){return n(),c("div",o,[e("div",null,[e("h3",null,t(r.currentUser.name),1),e("h3",null,t(r.currentUser.email),1)])])}const m=s(a,[["render",l],["__scopeId","data-v-47339cf4"]]);export{m as default};
