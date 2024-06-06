@@ -1,6 +1,6 @@
-# vuex-demo
+# Vuex Demo
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a simple project that demonstrates the use of Vuex to manage state in a Vue.js project. I have incorporated the use of Vuex state, mutations, actions and getters. Github pages link is live [here](https://jacobschestnut.github.io/vuex-demo/).
 
 ## Recommended IDE Setup
 
